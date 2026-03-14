@@ -8,24 +8,39 @@ Homebrew tap for [antoniocali](https://github.com/antoniocali)'s tools.
 brew tap antoniocali/tap
 ```
 
-Then install any formula:
+Then install any cask:
+
+```sh
+brew install antoniocali/tap/<cask>
+```
+
+## Casks
+
+| Cask | Description |
+|------|-------------|
+| `nnn` | A beautiful terminal note manager |
+| `terafrom` | A drop-in replacement for `terraform plan`/`apply` with clean, readable diff output |
+
+## Usage
+
+### nnn
 
 ```sh
 brew install antoniocali/tap/nnn
 ```
 
-## Formulae
+### terafrom
 
-| Formula | Description |
-|---------|-------------|
-| `nnn` | A beautiful TUI note manager in GoLang |
+```sh
+brew install antoniocali/tap/terafrom
+```
 
-## Update a formula after a new release
+## Updating casks after a new release
 
-When a new version of `nnn` is published on GitHub Releases, update `Formula/nnn.rb`:
+Casks in this tap are updated automatically via [GoReleaser](https://goreleaser.com/) when a new release is published to GitHub Releases.
 
-1. Change the `version` field.
-2. Replace each `sha256` value with the checksum of the corresponding release asset:
-   ```sh
-   curl -sL <asset-url> | shasum -a 256
-   ```
+To update manually, edit the relevant `.rb` file under `Casks/` and replace the `version` and `sha256` fields:
+
+```sh
+curl -sL <asset-url> | shasum -a 256
+```
