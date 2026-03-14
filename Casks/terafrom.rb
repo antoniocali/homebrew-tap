@@ -3,7 +3,7 @@ cask "terafrom" do
   name "terafrom"
   desc "A drop-in replacement for terraform plan/apply with clean, readable diff output"
   homepage "https://github.com/antoniocali/terafrom"
-  version "0.0.1"
+  version "0.1.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "terafrom" do
   on_macos do
     on_intel do
       url "https://github.com/antoniocali/terafrom/releases/download/v#{version}/terafrom_darwin_x86_64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "825c34a971fd1c97a2505d126e4c079b8619c741a52283ed112b439f3675e78e"
     end
     on_arm do
       url "https://github.com/antoniocali/terafrom/releases/download/v#{version}/terafrom_darwin_arm64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "164504349c81d0a10d9aab98ccea0091d22fd9a50051c84b65f49ed5563fa29a"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/antoniocali/terafrom/releases/download/v#{version}/terafrom_linux_x86_64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "632e54db4945b969935230181d99d335a13e34665cb0453cfde26bcb09745f52"
     end
     on_arm do
       url "https://github.com/antoniocali/terafrom/releases/download/v#{version}/terafrom_linux_arm64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "88164b350b400857c232be70c1bae7a708e1274c481555892c3fced854764c96"
     end
   end
 
