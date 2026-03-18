@@ -3,7 +3,7 @@ cask "nnn" do
   name "nnn"
   desc "A beautiful terminal note manager"
   homepage "https://github.com/antoniocali/nnn"
-  version "1.0.0"
+  version "1.1.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "nnn" do
   on_macos do
     on_intel do
       url "https://github.com/antoniocali/nnn/releases/download/v#{version}/nnn_darwin_x86_64.tar.gz"
-      sha256 "004cd4fa6e2044972bb1bca6e7eb0503f4039eb404559b1a3851a2afd07bae19"
+      sha256 "f68e2380e590f843e97b9432c5efc79817d1f84e477eea919f9ea5abe70625c9"
     end
     on_arm do
       url "https://github.com/antoniocali/nnn/releases/download/v#{version}/nnn_darwin_arm64.tar.gz"
-      sha256 "6f92f7db080a860171ae0a7ecb502497e69c6f084ba05f5fc5b26375e659a5e1"
+      sha256 "8e3164a944d4714859ee6d0470ee05c9272895ab923bd30afe8a824e37d6f3d7"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/antoniocali/nnn/releases/download/v#{version}/nnn_linux_x86_64.tar.gz"
-      sha256 "e9ecde58a3747e1df5fb4c9458aeb748c737cffc0b11ed11b2b41e31bde9405d"
+      sha256 "6b5acfc0419f79b17c334c1ad3c9f7c78ef9f8a9cfff4fa360f987d1ddf2c2fc"
     end
     on_arm do
       url "https://github.com/antoniocali/nnn/releases/download/v#{version}/nnn_linux_arm64.tar.gz"
-      sha256 "b2ffa20435168d2a5f8402098e60705931f73e83799bba47f1e4f56cf99679ad"
+      sha256 "edab5f49a17b5b0aa8405fd6a962f1d7796314b011be3c99a7fe5f35d0e2755f"
     end
   end
 
